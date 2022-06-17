@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* {
+  background-color: black;
+}
+
+
+h1 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  color: whitesmoke;
+  word-spacing: 16px;
+  animation: blink 1s linear infinite;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 4px #FFFFFF, 0 0 1px #FFFFFF, 0 0 0px #FFFFFF;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-size: cover;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  display: table;
+}
+
+
+.item {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px;
+}
+
+@keyframes blink {
+  0% {
+    text-shadow: 0 0 10px #FFFFFF, 0 0 10px #FFFFFF, 0 0 0px #FFFFFF;
+  }
+
+  50% {
+    text-shadow: 0 0 10px #000, 0 0 10px #000, 0 0 0px #000;
+  }
+
+  100% {
+    text-shadow: 0 0 10px #FFFFFF, 0 0 10px #FFFFFF, 0 0 0px #FFFFFF;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 6em;
+  }
+  p {
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
